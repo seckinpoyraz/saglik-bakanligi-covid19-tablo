@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 950px;
+  margin: 3% auto;
+  background-color: #00a6a3;
+  border: solid 6px #FFF;
+  -webkit-box-shadow: 0 0 20px rgba(59, 59, 59, 0.15);
+          box-shadow: 0 0 20px rgba(59, 59, 59, 0.15);
+  color: #FFF;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "top top top" "midleft midmid midright" "bot bot bot";
+  -ms-grid-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+}
+
+.container .virus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.container .logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.container .top {
+  grid-area: top;
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.container .mid-left {
+  grid-area: midleft;
+  z-index: 2;
+}
+
+.container .mid-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .mid-left ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px;
+  padding-left: 15px;
+  padding-bottom: 0;
+}
+
+.container .mid-left ul li .sol {
+  opacity: 0.65;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.container .mid-left ul li .sag {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.container .mid-mid {
+  grid-area: midmid;
+  text-align: center;
+  z-index: 2;
+}
+
+.container .mid-mid .gun {
+  font-weight: 700;
+  font-size: 190px;
+  letter-spacing: -10px;
+  margin-top: -29px;
+  padding-right: 25px;
+}
+
+.container .mid-mid .ay {
+  font-weight: 400;
+  font-size: 55px;
+  margin-top: -30px;
+}
+
+.container .mid-mid .yil {
+  font-weight: 700;
+  font-size: 90px;
+  margin-top: -10px;
+}
+
+.container .mid-right {
+  grid-area: midright;
+  padding: 6px;
+  margin-top: 6px;
+  z-index: 2;
+}
+
+.container .mid-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .mid-right ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #009291;
+  margin-bottom: 1px;
+}
+
+.container .mid-right ul li:last-child {
+  margin-bottom: 0;
+}
+
+.container .mid-right ul li:nth-child(2n) {
+  background-color: #007c7a;
+}
+
+.container .mid-right ul li .sol {
+  opacity: 0.85;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.container .mid-right ul li .sag {
+  margin-right: 10px;
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-right: 6px;
+  letter-spacing: -2px;
+}
+
+.container .bottom {
+  grid-area: bot;
+  text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  z-index: 2;
+}
+
+.container .bottom a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container .bottom a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #8b8b8b;
+}
+
+@media all and (max-width: 950px) {
+  .container {
+    width: auto;
+    grid-template: "top top top" "midmid midmid midmid" "midleft midleft midleft" "midright midright midright" "bot bot bot";
+  }
+  .container .mid-mid, .container .mid-left, .container .mid-right {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
