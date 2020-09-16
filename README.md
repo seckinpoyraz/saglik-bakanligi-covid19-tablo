@@ -4,4 +4,4 @@ Herkese merhaba, CSS Grid ve Flexbox kullanarak Sağlık Bakanlığı web sitesi
 Dosyaları dilediğiniz gibi inceleyip kullanabilirsiniz.
 Kendinize iyi bakın, maske takmayı ve sosyal mesafenizi korumayı unutmayın.
 
-[![İlgili Video](https://seckinpoyraz.com/uploads/thumb2.png)](http://www.youtube.com/watch?v=-8wKNv5TVr4)
+[![İlgili Video](https://seckinpoyraz.sirv.com/github_covid_youtube_video.png)](http://www.youtube.com/watch?v=-8wKNv5TVr4)
